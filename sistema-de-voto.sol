@@ -3,14 +3,14 @@ pragma solidity >0.6.99 <0.8.0;
 
 /// @Título Votação com delegação.
 contract Ballot {
-	 // Isso declara um novo tipo complexo que irá
+     // Isso declara um novo tipo complexo que irá
      // ser usado para variáveis posteriormente.
      // Representará um único eleitor.
     struct Voter {
-        uint weight; // weight is accumulated by delegation
-        bool voted;  // if true, that person already voted
-        address delegate; // person delegated to
-        uint vote;   // index of the voted proposal
+        uint weight; // peso é acumulado por delegação
+        bool voted;  // se for verdade, essa pessoa já votou
+        address delegate; // pessoa delegada a
+        uint vote;   // índice da proposta votada
     }
 
     // Este é um tipo para uma única proposta.
